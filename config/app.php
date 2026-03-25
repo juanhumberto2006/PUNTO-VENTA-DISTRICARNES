@@ -2,7 +2,9 @@
 
 	$protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http';
 	$host = $_SERVER['HTTP_HOST'] ?? 'localhost';
-	$baseUrl = $protocol . '://' . $host . '/VENTAS/';
+	$requestUri = $_SERVER['REQUEST_URI'] ?? '';
+	$basePath = (strpos($requestUri, '/VENTAS/') !== false) ? '/VENTAS/' : '/';
+	$baseUrl = $protocol . '://' . $host . $basePath;
 
 	define('APP_URL', $baseUrl);
 	define('APP_NAME', 'DISTRICARNES');
