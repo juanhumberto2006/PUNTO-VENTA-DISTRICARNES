@@ -1,12 +1,12 @@
 <?php
 
 	$protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http';
-	$host = $_SERVER['HTTP_HOST'];
+	$host = $_SERVER['HTTP_HOST'] ?? 'localhost';
 	$baseUrl = $protocol . '://' . $host . '/VENTAS/';
 
-	const APP_URL=$baseUrl;
-	const APP_NAME="DISTRICARNES";
-	const APP_SESSION_NAME="POS";
+	define('APP_URL', $baseUrl);
+	define('APP_NAME', 'DISTRICARNES');
+	define('APP_SESSION_NAME', 'POS');
 
 	/*----------  Tipos de documentos  ----------*/
 	const DOCUMENTOS_USUARIOS=["DUI","DNI","Cedula","Licencia","Pasaporte","Otro"];
