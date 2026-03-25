@@ -1,7 +1,11 @@
 <?php
 
-	const APP_URL="http://localhost/VENTAS/";
-	const APP_NAME="VENTAS";
+	$protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http';
+	$host = $_SERVER['HTTP_HOST'];
+	$baseUrl = $protocol . '://' . $host . '/VENTAS/';
+
+	const APP_URL=$baseUrl;
+	const APP_NAME="DISTRICARNES";
 	const APP_SESSION_NAME="POS";
 
 	/*----------  Tipos de documentos  ----------*/

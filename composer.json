@@ -1,0 +1,12 @@
+{
+    "name": "districarnes/ventas",
+    "description": "Punto de Venta DISTRICARNES",
+    "require": {
+        "php": ">=7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "app\\": "app/"
+        }
+    }
+}
