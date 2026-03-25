@@ -1,0 +1,1 @@
+		private $port=DB_PORT;

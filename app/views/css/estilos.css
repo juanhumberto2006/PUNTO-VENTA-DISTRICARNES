@@ -1,0 +1,619 @@
+/*=====================================================
+                    Tipografia
+======================================================*/
+@font-face{
+    font-family: "RobotoCondensedLight";
+    src: url("../webfonts/robotocondensed-light.ttf"), 
+    url("../webfonts/robotocondensed-light.eot"), 
+    url("../webfonts/robotocondensed-light.woff"), 
+    url("../webfonts/robotocondensed-light.woff2"), 
+    url("../webfonts/robotocondensed-light.svg");
+}
+@font-face{
+    font-family: "RobotoRegular";
+    src: url("../webfonts/roboto-regular.ttf"), 
+    url("../webfonts/roboto-regular.eot"), 
+    url("../webfonts/roboto-regular.woff"), 
+    url("../webfonts/roboto-regular.woff2"), 
+    url("../webfonts/roboto-regular.svg");
+}
+@font-face{
+    font-family: "OswaldLight";
+    src: url("../webfonts/oswald-light.ttf"), 
+    url("../webfonts/oswald-light.eot"), 
+    url("../webfonts/oswald-light.woff"), 
+    url("../webfonts/oswald-light.woff2"), 
+    url("../webfonts/oswald-light.svg");
+}
+
+/* ==========================================================================
+   TEMA NEGRO, ROJO Y BLANCO - SUPER COOL GAMER STYLE
+   ========================================================================== */
+
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: "RobotoRegular";
+    position: relative;
+    background-color: #000000 !important; /* Fondo Negro Puro */
+    color: #ffffff !important; /* Texto Blanco por defecto */
+}
+
+/* Login Moderno */
+.main-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000000;
+    background: radial-gradient(circle, #1a0000 0%, #000000 100%); /* Efecto viñeta roja sutil */
+}
+
+.main-container > .login,
+.main-container > .hero-body {
+    height: auto;
+    width: 100%;
+    max-width: 400px;
+    min-width: 300px;
+}
+
+.is-photo {
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.text-condensedLight { font-family: "RobotoCondensedLight"; }
+.tittles { font-family: "OswaldLight"; }
+
+.full-width {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.list-unstyle {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.img-responsive {
+    width: 100%;
+    height: auto;
+}
+
+.divider-menu-h {
+    height: 0 !important;
+    border-top: 1px solid #333 !important; /* Divisor oscuro */
+    width: 92% !important;
+    margin: 0 auto !important;
+}
+
+.page-container {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background-color: #000000;
+}
+
+/* Scrolls Personalizados (Negro/Rojo) */
+.scroll::-webkit-scrollbar {
+    width: 8px;
+}
+.scroll::-webkit-scrollbar-thumb {
+    background: #cc0000; /* Scroll Rojo */
+    border-radius: 4px;
+}
+.scroll::-webkit-scrollbar-thumb:active,
+.scroll::-webkit-scrollbar-thumb:hover {
+    background: #ff0000; /* Scroll Rojo Brillante */
+} 
+.scroll::-webkit-scrollbar-track {
+    background: #111; /* Track Negro */
+}
+.scroll::-webkit-scrollbar-track:hover, 
+.scroll::-webkit-scrollbar-track:active {
+    background: #111;
+}
+
+/* Barra Superior (Navbar) */
+.navBar {
+    background-color: #0a0a0a !important; /* Casi negro */
+    height: 45px;
+    color: #fff;
+    position: relative;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 10px rgba(204, 0, 0, 0.2); /* Sombra roja sutil */
+    border-bottom: 1px solid #222;
+}
+
+.navBar-options {
+    line-height: 45px;
+    height: 45px;
+    padding: 0;
+    transition: all .3s ease-in-out;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navBar-options .fa-exchange-alt,
+.navBar-options-list {
+    line-height: 45px;
+    height: 45px;
+    margin: 0;
+    padding: 0;
+}
+
+.navBar-options .fa-exchange-alt {
+    width: 40px;
+    left: 0;
+    font-size: 23px;
+    cursor: pointer;
+    user-select: none;
+    text-align: center;
+    outline: none;
+    margin-left: 9px;
+    color: #fff;
+}
+.navBar-options .fa-exchange-alt:hover {
+    color: #ff0000; /* Icono rojo al hover */
+}
+
+.navBar-options-list {
+    right: 9px;
+}
+
+.navBar-options-list .noLink {
+    cursor: inherit;
+}
+
+.navBar-options-list ul {
+    height: 45px;
+    display: flex;
+}
+
+.navBar-options-list ul li {
+    height: 45px;
+    line-height: 45px;
+    cursor: pointer;
+    padding: 0 7px;
+    font-size: 21px;
+    user-select: none;
+    outline: none;
+    color: #fff;
+}
+
+.navBar-options-list ul li a,
+.navBar-options-list ul li img {
+    margin: 0;
+    padding: 0;
+    padding-top: 0;
+    margin-top: 0;
+    box-sizing: border-box;
+    color: #FFF;
+}
+
+.navBar-options-list ul li a:hover {
+    color: #ff0000; /* Links rojos al hover */
+}
+
+.navBar-options-list ul li img {
+    border: 1px solid #cc0000; /* Borde rojo foto */
+    border-radius: 50%;
+    width: 39px;
+    height: 39px;
+    margin-top: 3px;
+    margin-bottom: 0;
+}
+
+/* Layout General */
+.navLateral,
+.pageContent,
+.navLateral-body {
+    height: 100%;
+}
+
+.navLateral,
+.pageContent {
+    overflow-y: auto;
+}
+
+/* Navegación Lateral (Sidebar) */
+.navLateral {
+    width: 300px;
+    border-right: 1px solid #222;
+    transition: all .3s ease-in-out;
+    position: relative;
+    background: #050505; /* Fondo muy oscuro */
+    box-shadow: 4px 0 15px rgba(0,0,0,0.5);
+}
+
+.navLateral-change {
+    pointer-events: none;
+    opacity: 0;
+    width: 0;
+    border-right: none;
+}
+
+.navLateral-body {
+    background-color: transparent;
+    position: relative;
+}
+
+.navLateral-body-logo {
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    width: 100%;
+    font-size: 25px;
+    background-color: #990000; /* Rojo Oscuro Logo */
+    text-align: center;
+    border-bottom: 1px solid #660000;
+}
+
+.navLateral-body-cl,
+.navLateral-body-cr {
+    box-sizing: border-box;
+    height: 77px;
+    float: left;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.navLateral-body-cl {
+    width: 30%;
+    color: #ff0000; /* Iconos Rojos por defecto */
+}
+
+.navLateral-body-cl img {
+    width: 57px;
+    height: 57px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+    border: 2px solid #cc0000;
+    border-radius: 50%;
+}
+
+.navLateral-body-cr {
+    width: 70%;
+    font-family: "RobotoCondensedLight";
+    color: #fff;
+}
+
+.navLateral-body-tittle-menu {
+    height: 70px;
+    line-height: 70px; 
+    font-size: 20px; 
+    background-color: #111; /* Fondo titulo menu */
+    color: #ff0000; /* Texto titulo menu rojo */
+    text-align: center;
+    border-bottom: 1px solid #333;
+    border-top: 1px solid #333;
+}
+
+.menu-principal li,
+.menu-principal li a {
+    display: block;
+}
+
+.menu-principal li a {
+    height: 45px;
+    color: #eee; /* Texto menu blanco humo */
+    position: relative;
+    transition: all .3s ease-in-out;
+    border-left: 4px solid transparent;
+    text-decoration: none;
+}
+
+.menu-principal li a:hover {
+    color: #fff;
+    background-color: #1a1a1a;
+    border-left: 4px solid #ff0000; /* Borde rojo hover */
+}
+
+.menu-principal li a:hover .navLateral-body-cl {
+    color: #ff0000; /* Asegurar icono rojo hover */
+}
+
+.menu-principal li a div.navLateral-body-cl,
+.menu-principal li a div.navLateral-body-cr {
+    height: 45px;
+    line-height: 45px;
+}
+
+.menu-principal li a div.navLateral-body-cl {
+    text-align: center;
+    font-size: 20px;
+}
+
+.btn-subMenu span.fa-chevron-down {
+    position: absolute;
+    top: 0;
+    right: 7px;
+    line-height: 45px;
+    height: 45px;
+    font-size: 19px;
+    transition: all .3s ease-in-out;
+    color: #666;
+}
+
+.btn-subMenu:hover span.fa-chevron-down {
+    color: #ff0000;
+}
+
+.btn-subMenu + .sub-menu-options {
+    transition: all .3s ease-in-out;
+}
+
+.sub-menu-options {
+    height: 0;
+    background-color: #0a0a0a; /* Submenu oscuro */
+    overflow-y: hidden;
+    transition: all .3s ease-in-out;
+    border-left: 2px solid #333;
+}
+
+.sub-menu-options li a { border-left: 4px solid transparent; }
+.sub-menu-options li a:hover { border-left: 4px solid #cc0000; background-color: #111; }
+
+.btn-subMenu-show {
+    background-color: #111;
+    border-left: 4px solid #cc0000;
+}
+
+.btn-subMenu-show .navLateral-body-cl,
+.btn-subMenu-show .navLateral-body-cr {
+    color: #fff;
+}
+
+.btn-subMenu-show + .sub-menu-options {
+    height: auto;
+    overflow-y: auto;
+    background-color: #000;
+    border-bottom: 1px solid #222;
+}
+
+.btn-subMenu-show span.fa-chevron-down {
+    transform: rotate(180deg);
+    color: #ff0000;
+}
+
+/* Contenido Pagina */
+.pageContent {
+    width: calc(100% - 300px);
+    background-color: #000000;
+    transition: all .3s ease-in-out;
+}
+
+.pageContent-change {
+    width: 100%;
+}
+
+/* Dashboard Cards */
+.dashboard-container {
+    background-color: #000000;
+    min-height: 100vh;
+}
+
+.dashboard-card {
+    background: #0a0a0a;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #222;
+    text-decoration: none !important;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(204, 0, 0, 0.3);
+    border-color: #ff0000; /* Borde rojo al hover */
+}
+
+.dashboard-icon {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #ff0000 !important; /* Iconos Rojos SIEMPRE */
+}
+
+.dashboard-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.dashboard-heading {
+    color: #cccccc;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.welcome-section {
+    background: linear-gradient(135deg, #000000 0%, #1a0000 100%);
+    border-radius: 15px;
+    padding: 30px;
+    color: white;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    border: 1px solid #333;
+    border-left: 5px solid #ff0000;
+}
+
+.welcome-title {
+    color: #fff !important;
+    font-weight: 700;
+}
+
+.welcome-subtitle {
+    color: #ff0000 !important;
+    font-weight: 500;
+}
+
+/* Login Moderno Styles */
+.login-bg-modern {
+    background-color: #000;
+}
+
+.login-box-modern {
+    border-radius: 20px !important;
+    padding: 3rem !important;
+    box-shadow: 0 0 40px rgba(204,0,0,0.2) !important;
+    background-color: #0a0a0a !important;
+    max-width: 450px !important;
+    width: 100%;
+    border: 1px solid #333;
+}
+
+.input-modern {
+    background-color: #000;
+    border-radius: 50px !important;
+    padding-left: 15px !important;
+    border: 1px solid #333 !important;
+    transition: all 0.3s ease;
+    height: 45px !important;
+    color: #fff !important;
+}
+
+.input-modern::placeholder { color: #666; }
+
+.input-modern:focus {
+    border-color: #ff0000 !important;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.3) !important;
+}
+
+.btn-modern {
+    border-radius: 50px !important;
+    background: linear-gradient(to right, #cc0000, #990000) !important;
+    border: none !important;
+    color: white !important;
+    height: 45px !important;
+    font-weight: 600 !important;
+    letter-spacing: 1px;
+    transition: all 0.3s ease !important;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.btn-modern:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(204,0,0,0.5);
+    background: linear-gradient(to right, #ff0000, #cc0000) !important;
+}
+
+.login-icon-modern {
+    color: #ff0000;
+    margin-bottom: 1rem;
+}
+
+/* Bulma Overrides (CRUDs) */
+.title { color: #ffffff !important; }
+.subtitle { color: #cc0000 !important; }
+strong { color: #ffffff !important; }
+label { color: #cccccc !important; }
+
+.input, .textarea, .select select {
+    background-color: #111 !important;
+    border-color: #333 !important;
+    color: #fff !important;
+    box-shadow: none !important;
+}
+
+.input:focus, .textarea:focus, .select select:focus, 
+.input:active, .textarea:active, .select select:active {
+    border-color: #ff0000 !important;
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5) !important;
+}
+
+.input::placeholder, .textarea::placeholder { color: #555 !important; }
+
+.button {
+    background-color: #222;
+    border-color: #444;
+    color: #fff;
+}
+.button:hover {
+    background-color: #333;
+    border-color: #cc0000;
+    color: #fff;
+}
+
+.button.is-info, .button.is-primary, .button.is-link {
+    background-color: #cc0000 !important;
+    border-color: #cc0000 !important;
+    color: #fff !important;
+}
+.button.is-info:hover, .button.is-primary:hover, .button.is-link:hover {
+    background-color: #ff0000 !important;
+    border-color: #ff0000 !important;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.6);
+}
+
+.button.is-success {
+    background-color: #00cc00 !important;
+    border-color: #00cc00 !important;
+    color: #000 !important;
+}
+
+.table {
+    background-color: #0a0a0a !important;
+    color: #fff !important;
+}
+.table thead th {
+    color: #ff0000 !important;
+    border-bottom: 2px solid #cc0000 !important;
+}
+.table th, .table td {
+    border-color: #333 !important;
+    color: #ddd !important;
+}
+.table.is-striped tbody tr:not(.is-selected):nth-child(even) {
+    background-color: #111 !important;
+}
+.table.is-hoverable tbody tr:not(.is-selected):hover {
+    background-color: #1a1a1a !important;
+    color: #fff !important;
+}
+
+/* Media Queries */
+@media (max-width: 750px){
+    .navLateral{
+        pointer-events: none;
+        opacity: 0;
+        width: 0;
+        border-right: none;
+    }
+    .navLateral-change{
+        width: 300px;
+        pointer-events: auto;
+        opacity: 1;
+        border-right: 1px solid #222;
+    }
+    .pageContent{
+        width: 100%;
+    }
+    .pageContent-change{
+       width: calc(100% - 300px);
+    }
+}
